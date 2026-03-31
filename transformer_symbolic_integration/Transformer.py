@@ -102,7 +102,7 @@ class Transformer(nn.Module):
         return pad | causal
 
     def saveModel(self):
-        torch.save(self.state_dict())
+        torch.save(self.state_dict(), "transformerModel.pt")
 
 class EncoderLayer(nn.Module):
     def __init__(self, modelDim, numHeads):
