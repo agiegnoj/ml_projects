@@ -9,7 +9,7 @@ maxDepth = 4
 
 binOperators = ["**", "*", "/", "+", "-"]
 functions = ["sin", "cos", "tan", "exp", "log", "sqrt", "asin", "acos", "atan"]
-functionCount = len(functions)
+
 maxIndex = len(binOperators) + len(functions) + 2
 maxSeqLength = 120
 
