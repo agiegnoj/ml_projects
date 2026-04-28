@@ -7,7 +7,7 @@ class Transformer(nn.Module):
     def __init__(self, vocab, modelDim=512, numHeads=8, numLayers=6, maxSeqLength=120):
         super().__init__()
         self.modelDim = modelDim
-        self.vocab = vocab
+        
         vocabSize = len(vocab)
 
         self.embedding = nn.Embedding(vocabSize, modelDim)
