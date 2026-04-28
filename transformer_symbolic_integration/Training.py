@@ -51,5 +51,5 @@ def prepareData(datasetSize, batchSize):
     return dataloader, vocab, stoi, itos, sosId, padId
 
 if __name__ == "__main__":
-    dl, vocab, stoi, itos, sosId, padId = prepareData(100, 10)
+    dl, vocab, stoi, itos, sosId, padId = prepareData(100000, 1000)
     train(dl, vocab, padId, 100)
